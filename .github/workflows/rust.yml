@@ -11,14 +11,19 @@ env:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v2
     - name: Install
       run: curl https://rustwasm.github.io/wasm-pack/installer/init.sh -sSf | sh
     - name: Build wasm
       run: wasm-pack build
+
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Install
+      run: curl https://rustwasm.github.io/wasm-pack/installer/init.sh -sSf | sh
     - name: Run tests firefox
       run: wasm-pack test --headless --firefox
