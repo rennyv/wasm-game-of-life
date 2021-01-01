@@ -4,6 +4,7 @@ const pre = document.getElementById("game-of-life-canvas");
 const universe = Universe.new();
 
 const renderLoop = () => {
+    //debugger;
     pre.textContent = universe.render();
     universe.tick();
   
