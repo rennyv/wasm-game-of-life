@@ -1,8 +1,11 @@
 [package]
 name = "wasm-game-of-life"
 version = "0.1.0"
-authors = ["renny <renny@vanneste.ca>"]
+authors = ["renny <github@renny.vanneste.ca>"]
 edition = "2018"
+repository = "https://github.com/rennyv/wasm-game-of-life"
+description = "A Rust implementation of Conway's Game of Life"
+license = "MIT"
 
 [lib]
 crate-type = ["cdylib", "rlib"]
