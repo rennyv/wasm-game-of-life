@@ -21,4 +21,5 @@ jobs:
     - name: Build wasm
       run: wasm-pack build
     - name: Run tests
-      run: cargo test --verbose
+      run: wasm-pack test --headless --chrome
+      run: wasm-pack test --headless --firefox
