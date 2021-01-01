@@ -1,3 +1,4 @@
+[![Build Actions Status](https://github.com/rennyv/wasm-game-of-life/workflows/Build/badge.svg)](https://github.com/rennyv/wasm-game-of-life/actions)
 # Game of Life
 
 Simple demo of wasm in Rust creating the Conway's Game of Life 
